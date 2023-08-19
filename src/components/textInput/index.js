@@ -18,7 +18,7 @@ const Colored = ({
     inputContainerStyle, onPressIconRight, inputStyle,
     right, keyboardType, iconStyleRight, error,
     left, customIconLeft, iconNameLeft, iconTypeLeft, iconSizeLeft,
-    iconColorLeft, iconStyleLeft, onPressIconLeft
+    iconColorLeft, iconStyleLeft, onPressIconLeft,placeholderTextColor, iconRightContainer
 }) => {
     return (
         <TouchableOpacity
@@ -74,7 +74,7 @@ const Colored = ({
                                 returnKeyType={returnKeyType}
                                 onSubmitEditing={onSubmitEditing}
                                 multiline={multiline}
-                                placeholderTextColor={'#21212180'}
+                                placeholderTextColor={placeholderTextColor ? placeholderTextColor :'#21212180'}
                                 keyboardType={keyboardType}
                                 onFocus={onFocus}
                                 onBlur={onBlur}
@@ -90,9 +90,9 @@ const Colored = ({
                             right
                             :
                             iconNameRight ?
-                                <Wrapper style={{ alignItems: 'center', marginRight: sizes.marginHorizontal }}>
-                                    <Icon name={iconNameRight} type={iconTypeRight} size={iconSizeRight ? iconSizeRight : sizes.icons.medium} color={iconColorRight ? iconColorRight : colors.appTextColor5} iconStyle={iconStyleRight} onPress={onPressIconRight} />
-                                </Wrapper>
+                                <TouchableOpacity onPress={onPressIconRight} style={[{ alignItems: 'center', marginRight: sizes.marginHorizontal },iconRightContainer]}>
+                                    <Icon name={iconNameRight} type={iconTypeRight} size={iconSizeRight ? iconSizeRight : sizes.icons.medium} color={iconColorRight ? iconColorRight : colors.appTextColor5} iconStyle={iconStyleRight}  />
+                                </TouchableOpacity>
                                 :
                                 null
                     }

@@ -475,6 +475,9 @@ export const appStyles = StyleSheet.create({
   justifyContentSpaceEvenly: {
     justifyContent: 'space-evenly',
   },
+  justifyContentSpaceArround: {
+    justifyContent: 'space-around',
+  },
   justifyContentFlexend: {
     justifyContent: 'flex-end',
   },

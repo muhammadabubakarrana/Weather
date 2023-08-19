@@ -1,7 +1,7 @@
 import React from 'react'
 import { appStyles, colors, fontSize, sizes } from '../../services'
 //import {Icons, Wrapper, Text } from '..'
-import { goBack } from '../../navigation/rootNavigation'
+//import { goBack } from '../../navigation/rootNavigation'
 import * as Icons from '../icons';
 import Wrapper from '../wrapper';
 import Text from '../text';

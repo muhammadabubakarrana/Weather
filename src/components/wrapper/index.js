@@ -9,6 +9,7 @@ export default ({
     iterationCount, isMain, isGradient, flex,
     flexDirectionRow,
     //justifyContent
+    justifyContentSpaceArround,
     justifyContentCenter,
     justifyContentSpaceBetween,
     justifyContentFlexend,
@@ -117,6 +118,7 @@ export default ({
 
                 flexDirectionRow && appStyles.flexDirectionRow,
                 //justifyContent
+                justifyContentSpaceArround && appStyles.justifyContentSpaceArround,
                 justifyContentSpaceBetween && appStyles.justifyContentSpaceBetween,
                 justifyContentCenter && appStyles.justifyContentCenter,
                 justifyContentFlexend && appStyles.justifyContentFlexend,

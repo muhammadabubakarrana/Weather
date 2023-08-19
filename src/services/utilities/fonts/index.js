@@ -1,12 +1,11 @@
-
-import { totalSize } from "react-native-dimension"
+import {totalSize} from 'react-native-dimension';
 
 const fontFamily = {
   appTextLight: 'Roboto-Light',
   appTextRegular: 'Roboto-Regular',
   appTextMedium: 'Roboto-Medium',
   appTextBold: 'Roboto-Bold',
-}
+};
 const fontSize = {
   h1: totalSize(4.5),
   h2: totalSize(4),
@@ -19,9 +18,10 @@ const fontSize = {
   medium: totalSize(1.75),
   regular: totalSize(1.5),
   small: totalSize(1.25),
-  tiny: totalSize(1)
-}
+  tiny: totalSize(1),
+};
+const theme = {
+  bgWhite: opacity => `rgba(255,255,255, ${opacity})`,
+};
 
-
-export  {fontFamily,fontSize}
-
+export {fontFamily, fontSize, theme};
