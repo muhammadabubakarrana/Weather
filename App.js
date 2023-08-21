@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
-import {View, Text, SafeAreaView} from 'react-native';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
+import React from 'react';
 import Navigation from './src/navigation';
 import {RootSiblingParent} from 'react-native-root-siblings';
+import {Wifi} from './src/screens';
 export default function App() {
   return (
     <RootSiblingParent>
